@@ -1,7 +1,9 @@
 <template>
   <div class="navbar">
     <nav>
-      <img src="@/assets/inadenLOGO.png" />
+      <router-link to="/"
+        ><img src="@/assets/inadenLOGO.png" alt=""
+      /></router-link>
       <ul>
         <li>
           <router-link to="/">ÚVOD</router-link>
@@ -64,7 +66,7 @@ a {
 a:hover,
 a:active,
 a.router-link-active {
-  color: rgb(179, 26, 26);
+  color: rgb(25, 44, 191);
 }
 
 nav img {
