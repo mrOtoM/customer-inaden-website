@@ -2,7 +2,7 @@
   <div class="navbar">
     <nav>
       <router-link to="/"
-        ><img src="@/assets/inadenLOGO.png" alt=""
+        ><img src="@/assets/img/inadenLOGO.png" alt=""
       /></router-link>
       <ul>
         <li>
