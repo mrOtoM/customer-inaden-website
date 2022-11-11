@@ -2,7 +2,7 @@
   <header>
     <nav-bar></nav-bar>
   </header>
-  <router-view />
+  <!-- <router-view /> -->
 </template>
 
 <script>
@@ -16,28 +16,37 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
 #app {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 html {
   font-size: 67.5%;
 }
 
-nav {
-  padding: 30px;
+header {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+:root {
+  --blue: #343a90;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 </style>

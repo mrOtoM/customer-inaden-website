@@ -74,8 +74,8 @@ export default {
 
 <style scoped>
 .swiper__size {
-  max-width: 1250px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
 }
 
 html,
@@ -124,9 +124,5 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.effect-fade {
-  transition-duration: 1s !important;
 }
 </style>
