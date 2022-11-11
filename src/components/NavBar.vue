@@ -32,7 +32,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style>
 header {
   position: fixed;
   top: 0;
@@ -46,40 +46,6 @@ header {
   z-index: 1000;
 }
 
-nav {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-li {
-  margin: 0 1rem;
-}
-
-a {
-  text-decoration: none;
-  background: transparent;
-  color: #333;
-  font-weight: 500;
-  font-size: 1.7rem;
-}
-
-a:hover,
-a:active,
-a.router-link-active {
-  color: var(--blue);
-}
-
 header img {
   max-height: 3.3rem;
   margin-top: 3px;
@@ -89,14 +55,39 @@ header img:hover {
   opacity: 0.8;
 }
 
-.navbar {
-  background: #fff;
-}
-
 #menu {
   font-size: 3rem;
   color: #666;
   cursor: pointer;
   display: none;
+}
+
+header .navbar {
+  background: #fff;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar ul li {
+  margin-left: 3rem;
+}
+
+header .navbar ul li a {
+  text-decoration: none;
+  background: transparent;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+header .navbar ul li a:hover,
+header .navbar ul li a:active,
+header .navbar ul li a.router-link-active {
+  color: var(--blue);
 }
 </style>

@@ -44,4 +44,43 @@ html {
 }
 
 /* --------- media queries ---------- */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+    /* transform: scaleY(0); */
+    /* transform-origin: top; */
+    /* opacity: 0; */
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  header .navbar ul li a {
+    font-size: 2.5rem;
+    /* display: block; */
+  }
+}
 </style>
