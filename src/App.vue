@@ -1,6 +1,6 @@
 <template>
   <nav-bar></nav-bar>
-  <!-- <router-view /> -->
+  <router-view />
 </template>
 
 <script>
@@ -20,7 +20,17 @@ export default {
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  list-style: none;
   transition: all 0.2s linear;
+}
+
+:root {
+  --blue: #343a90;
+  --white: rgb(255, 255, 255);
+}
+
+html {
+  font-size: 67.5%;
 }
 
 #app {
@@ -30,17 +40,18 @@ export default {
   text-align: center;
 }
 
-html {
-  font-size: 67.5%;
+.btn {
+  padding: 0.7rem 4rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+  color: #999;
+  border: 0.1rem solid #dee4ee;
 }
 
-:root {
-  --blue: #343a90;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.btn:hover {
+  background: #f0f0f0;
+  color: var(--blue);
 }
 
 /* --------- media queries ---------- */

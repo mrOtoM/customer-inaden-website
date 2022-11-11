@@ -1,6 +1,5 @@
 <template>
   <slider></slider>
-  <contact-us></contact-us>
 </template>
 
 <script>

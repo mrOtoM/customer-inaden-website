@@ -34,7 +34,7 @@ export default {};
 
 <style>
 header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -67,7 +67,6 @@ header .navbar {
 }
 
 header .navbar ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,26 +1,42 @@
 <template>
-  <div class="swiper__size">
-    <swiper
-      :spaceBetween="30"
-      :effect="'fade'"
-      :centeredSlides="true"
-      :autoplay="{
-        delay: 3000,
-        disableOnInteraction: false,
-      }"
-      :pagination="{
-        clickable: true,
-      }"
-      :navigation="false"
-      :modules="modules"
-      class="mySwiper"
-    >
-      <swiper-slide v-for="image in images" :key="image.id">
-        <img :src="image.imageUrl" />
-      </swiper-slide>
-    </swiper>
-  </div>
+  <section class="home" id="home">
+    <div class="content">
+      <!-- <span>Kto sme?</span> -->
+      <div class="content__info">
+        <h3>INADEN - Kovovýroba</h3>
+        <p>
+          Zabezpečujeme unikátne spracovanie našich výrobkov z nereze a ocele
+          najvyššej kvality, čím dokážeme uspokojiť požiadavky každého
+          zákazníka, Našou prednosťou je rýchlosť a flexibilita, naším cieľom –
+          spokojný zákazník.
+        </p>
+      </div>
+      <router-link to="/aboutcompany" class="btn">O firme</router-link>
+    </div>
+    <div class="image">
+      <swiper
+        :spaceBetween="30"
+        :effect="'fade'"
+        :centeredSlides="true"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false,
+        }"
+        :pagination="{
+          clickable: true,
+        }"
+        :navigation="false"
+        :modules="modules"
+        class="mySwiper"
+      >
+        <swiper-slide v-for="image in images" :key="image.id">
+          <img :src="image.imageUrl" />
+        </swiper-slide>
+      </swiper>
+    </div>
+  </section>
 </template>
+
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -73,30 +89,56 @@ export default {
 </script>
 
 <style scoped>
-.swiper__size {
-  max-width: 100%;
-  margin: auto;
+section {
+  min-height: 100vh;
 }
 
-html,
-body {
+.home {
   position: relative;
-  height: 100%;
-  background-color: aqua;
+  min-height: 42vh;
+  overflow: hidden;
 }
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.home .content {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translateY(-50%);
+  width: 50%;
+  max-width: 55rem;
+  text-align: left;
 }
 
-.swiper {
+.home .content .content__info {
+  background-color: rgb(38, 38, 38, 0.5);
+  padding: 2rem;
+}
+
+.home .content .content__info h3 {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.home .content .content__info p {
+  font-size: 1.6rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.home .btn {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.home .btn:hover {
+  color: var(--blue);
+  background-color: var(--white);
+}
+* .swiper {
   width: 100%;
   height: 100%;
+  z-index: -10;
 }
 
 .swiper-slide {
