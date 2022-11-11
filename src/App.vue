@@ -1,7 +1,5 @@
 <template>
-  <header>
-    <nav-bar></nav-bar>
-  </header>
+  <nav-bar></nav-bar>
   <!-- <router-view /> -->
 </template>
 
@@ -36,11 +34,6 @@ html {
   font-size: 67.5%;
 }
 
-header {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
 :root {
   --blue: #343a90;
 }
@@ -49,4 +42,6 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* --------- media queries ---------- */
 </style>

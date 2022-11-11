@@ -1,10 +1,11 @@
 <template>
-  <div class="container">
+  <header>
+    <router-link to="/"
+      ><img src="@/assets/img/inadenLOGO.png" alt=""
+    /></router-link>
+    <div id="menu" class="fas fa-bars"></div>
     <div class="navbar">
       <nav>
-        <router-link to="/"
-          ><img src="@/assets/img/inadenLOGO.png" alt=""
-        /></router-link>
         <ul>
           <li>
             <router-link to="/">Úvod</router-link>
@@ -24,7 +25,7 @@
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -32,10 +33,17 @@ export default {};
 </script>
 
 <style scoped>
-.navbar {
-  margin: 0;
-  padding: 1.5rem 1rem;
-  background: #fff;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 nav {
@@ -72,12 +80,23 @@ a.router-link-active {
   color: var(--blue);
 }
 
-nav img {
+header img {
   max-height: 3.3rem;
   margin-top: 3px;
 }
 
-nav img:hover {
+header img:hover {
   opacity: 0.8;
+}
+
+.navbar {
+  background: #fff;
+}
+
+#menu {
+  font-size: 3rem;
+  color: #666;
+  cursor: pointer;
+  display: none;
 }
 </style>
