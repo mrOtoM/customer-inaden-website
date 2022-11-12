@@ -1,7 +1,6 @@
 <template>
   <section class="home" id="home">
     <div class="content">
-      <!-- <span>Kto sme?</span> -->
       <div class="content__info">
         <h3>INADEN - Kovovýroba</h3>
         <p>
@@ -13,27 +12,25 @@
       </div>
       <router-link to="/aboutcompany" class="btn">O firme</router-link>
     </div>
-    <div class="image">
-      <swiper
-        :spaceBetween="30"
-        :effect="'fade'"
-        :centeredSlides="true"
-        :autoplay="{
-          delay: 3000,
-          disableOnInteraction: false,
-        }"
-        :pagination="{
-          clickable: true,
-        }"
-        :navigation="false"
-        :modules="modules"
-        class="mySwiper"
-      >
-        <swiper-slide v-for="image in images" :key="image.id">
-          <img :src="image.imageUrl" />
-        </swiper-slide>
-      </swiper>
-    </div>
+    <swiper
+      :spaceBetween="30"
+      :effect="'fade'"
+      :centeredSlides="true"
+      :autoplay="{
+        delay: 3000,
+        disableOnInteraction: false,
+      }"
+      :pagination="{
+        clickable: true,
+      }"
+      :navigation="false"
+      :modules="modules"
+      class="mySwiper"
+    >
+      <swiper-slide v-for="image in images" :key="image.id">
+        <img :src="image.imageUrl" />
+      </swiper-slide>
+    </swiper>
   </section>
 </template>
 
@@ -88,30 +85,29 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 section {
   min-height: 100vh;
 }
 
 .home {
   position: relative;
-  min-height: 42vh;
+  min-height: 80%;
   overflow: hidden;
 }
 
 .home .content {
   position: absolute;
   top: 50%;
-  left: 9%;
+  padding: 0 9%;
   transform: translateY(-50%);
-  width: 50%;
-  max-width: 55rem;
   text-align: left;
 }
 
 .home .content .content__info {
   background-color: rgb(38, 38, 38, 0.5);
   padding: 2rem;
+  max-width: 50%;
 }
 
 .home .content .content__info h3 {
@@ -135,7 +131,8 @@ section {
   color: var(--blue);
   background-color: var(--white);
 }
-* .swiper {
+
+.swiper {
   width: 100%;
   height: 100%;
   z-index: -10;
@@ -164,7 +161,10 @@ section {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--blue);
 }
 </style>

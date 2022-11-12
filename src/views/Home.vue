@@ -1,5 +1,6 @@
 <template>
   <slider></slider>
+  <p>home</p>
 </template>
 
 <script>

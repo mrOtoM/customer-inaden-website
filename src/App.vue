@@ -5,9 +5,10 @@
 
 <script>
 import NavBar from './components/NavBar.vue';
+import Slider from './components/Slider.vue';
 
 export default {
-  components: { NavBar },
+  components: { NavBar, Slider },
 };
 </script>
 
@@ -60,6 +61,9 @@ html {
   html {
     font-size: 55%;
   }
+  .home .content .content__info {
+    max-width: 70%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -92,6 +96,13 @@ html {
   header .navbar ul li a {
     font-size: 2.5rem;
     /* display: block; */
+  }
+  .home .content {
+    padding: 0 3%;
+    text-align: center;
+  }
+  .home .content .content__info {
+    max-width: 100%;
   }
 }
 </style>
