@@ -55,12 +55,43 @@ html {
   color: var(--blue);
 }
 
+.heading {
+  text-align: center;
+  color: var(--blue);
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.description {
+  font-size: 1.7rem;
+  text-align: var(--blue);
+  color: #999;
+  width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
 /* --------- media queries ---------- */
+
+@media (max-width: 1250px) {
+  .home .content .content__info {
+    max-width: 60%;
+  }
+}
 
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
+
+  .description {
+    padding: 1rem;
+    width: auto;
+    font-size: 1.6rem;
+  }
+
   .home .content .content__info {
     max-width: 70%;
   }
