@@ -163,4 +163,22 @@ export default {
 .swiper-pagination-bullet-active {
   background-color: var(--blue);
 }
+
+/* --------- media queries ---------- */
+
+@media (max-width: 1250px) {
+  .home .content .content__info {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home .content {
+    padding: 0 3%;
+    text-align: center;
+  }
+  .home .content .content__info {
+    max-width: 100%;
+  }
+}
 </style>

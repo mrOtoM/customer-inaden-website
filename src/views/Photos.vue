@@ -1,9 +1,17 @@
 <template>
-  <p>photos</p>
+  <div class="route__container">
+    <h1 class="heading">Galéria našich prác</h1>
+
+    <photo-gallery></photo-gallery>
+  </div>
 </template>
 
 <script>
-export default {};
+import PhotoGallery from '../components/PhotoGallery.vue';
+
+export default {
+  components: { PhotoGallery },
+};
 </script>
 
 <style></style>

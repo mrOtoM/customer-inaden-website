@@ -56,7 +56,7 @@ export default {};
 <style>
 .service {
   background: #f0f0f0;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .service .box-container {

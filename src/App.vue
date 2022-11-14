@@ -57,6 +57,10 @@ section {
   border: 0.1rem solid #dee4ee;
 }
 
+.route__container {
+  min-height: 70vh;
+}
+
 .btn:hover {
   background: #f0f0f0;
   color: var(--blue);
@@ -67,6 +71,7 @@ section {
   color: var(--blue);
   font-size: 3rem;
   font-weight: normal;
+  margin: 3rem 0;
 }
 
 .description {
@@ -93,12 +98,6 @@ section {
 }
 
 /* --------- media queries ---------- */
-
-@media (max-width: 1250px) {
-  .home .content .content__info {
-    max-width: 60%;
-  }
-}
 
 @media (max-width: 991px) {
   html {
