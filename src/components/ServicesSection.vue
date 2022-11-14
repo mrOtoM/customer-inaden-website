@@ -87,7 +87,7 @@ export default {};
 .service .box-container i {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: var(--blue);
+  color: var(--blue-light);
 }
 
 .service .box-container .box p {

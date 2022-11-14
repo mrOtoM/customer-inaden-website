@@ -1,5 +1,5 @@
 <template>
-  <section class="home" id="home">
+  <div class="home" id="home">
     <div class="content">
       <div class="content__info">
         <h3>INADEN - Kovovýroba</h3>
@@ -31,7 +31,7 @@
         <img :src="image.imageUrl" />
       </swiper-slide>
     </swiper>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -85,11 +85,7 @@ export default {
 };
 </script>
 
-<style>
-section {
-  min-height: 100vh;
-}
-
+<style scoped>
 .home {
   position: relative;
   min-height: 80%;

@@ -1,14 +1,16 @@
 <template>
   <nav-bar></nav-bar>
-  <router-view />
+  <router-view> </router-view>
+  <footerComp></footerComp>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
 import Slider from './components/Slider.vue';
+import FooterComp from './components/FooterComp.vue';
 
 export default {
-  components: { NavBar, Slider },
+  components: { NavBar, Slider, FooterComp },
 };
 </script>
 
@@ -27,11 +29,16 @@ export default {
 
 :root {
   --blue: #343a90;
+  --blue-light: #474c95;
   --white: rgb(255, 255, 255);
 }
 
 html {
   font-size: 67.5%;
+}
+
+section {
+  padding-bottom: 10rem;
 }
 
 #app {
@@ -71,6 +78,18 @@ html {
   text-align: center;
   margin-top: 1rem;
   line-height: 1.5;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 7.5rem;
+  z-index: 100;
+  display: none;
+}
+
+.scroll-top img {
+  height: 7rem;
 }
 
 /* --------- media queries ---------- */
