@@ -1,17 +1,15 @@
 <template>
   <div class="route__container">
     <h1 class="heading">Galéria našich prác</h1>
-
-    <photo-gallery></photo-gallery>
+    <p class="description">
+      Naša galéria sa pripravuje. Už čoskoro sa môžete tešiť na galériu našich
+      prác.
+    </p>
   </div>
 </template>
 
 <script>
-import PhotoGallery from '../components/PhotoGallery.vue';
-
-export default {
-  components: { PhotoGallery },
-};
+export default {};
 </script>
 
 <style></style>

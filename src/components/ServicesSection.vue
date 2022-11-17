@@ -19,7 +19,7 @@
           INADEN, s.r.o. Naša hlavná činnosť je zámočníctvo a kovovýroba. Máme
           dlhoročné skúsenosti a veľa spokojných zákazníkov v SR aj mimo nej.
         </p>
-        <a href="#" class="btn">Čítať viac</a>
+        <router-link to="/aboutcompany" class="btn">Čítať viac</router-link>
       </div>
 
       <div class="box">
@@ -33,7 +33,7 @@
           zábradlia. Markízy a striešky z bezpečnostného skla, prístrešky.
           Realizujeme ...
         </p>
-        <a href="#" class="btn">Čítať viac</a>
+        <router-link to="/services" class="btn">Čítať viac</router-link>
       </div>
 
       <div class="box">
@@ -43,7 +43,7 @@
           Ak vás zaujali naše služby, alebo sa vám páčia naše práce neváhajte
           nás kontaktovať telefonicky alebo e-mailom. Tešíme sa na spoluprácu.
         </p>
-        <a href="#" class="btn">Čítať viac</a>
+        <router-link to="/contact" class="btn">Čítať viac</router-link>
       </div>
     </div>
   </section>
