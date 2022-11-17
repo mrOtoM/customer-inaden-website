@@ -1,6 +1,6 @@
 <template>
   <div class="route__container">
-    <h1 class="heading">O firme</h1>
+    <h1 class="heading">Služby</h1>
     <p class="description">
       Zaoberáme sa zákazkovou výrobou a montážou oceľových konštrukcií ako sú
       brány, ploty, zábradlia, schodiská, nábytok atď, ich servisom a opravami.

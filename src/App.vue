@@ -59,6 +59,7 @@ section {
 
 .route__container {
   min-height: 70vh;
+  margin-top: 10rem;
 }
 
 .btn:hover {
@@ -116,7 +117,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  #menu {
+  #menu-btn {
     display: block;
   }
 
@@ -127,9 +128,7 @@ section {
     width: 100%;
     background: #fff;
     border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
-    /* transform: scaleY(0); */
-    /* transform-origin: top; */
-    /* opacity: 0; */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
   header .navbar ul {

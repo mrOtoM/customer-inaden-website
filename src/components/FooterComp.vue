@@ -22,11 +22,11 @@
 
         <div class="box">
           <h3>Rýchle odkazy</h3>
-          <a href="#">Domov</a>
-          <a href="#">O firme</a>
-          <a href="#">Služby</a>
-          <a href="#">Fotogaléria</a>
-          <a href="#">Kontakt</a>
+          <router-link to="/">Domov</router-link>
+          <router-link to="/aboutcompany">O firme</router-link>
+          <router-link to="/services">Služby</router-link>
+          <router-link to="/photos">Fotogaléria</router-link>
+          <router-link to="/contact">Kontakt</router-link>
         </div>
       </div>
 
@@ -58,18 +58,18 @@ export default {};
 
 .footer .box-container .box h3 {
   padding-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #fff;
 }
 
 .footer .box-container .box p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #eee;
   line-height: 1.8;
 }
 
 .footer .box-container .box a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #eee;
   display: block;
   padding: 0.6rem 0;
@@ -80,11 +80,11 @@ export default {};
 }
 
 .footer .credit {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #333;
   background: #f0f0f0;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   font-weight: normal;
 }
 </style>

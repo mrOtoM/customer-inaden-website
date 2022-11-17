@@ -1,6 +1,6 @@
 <template>
   <section class="process" id="process">
-    <h1 class="heading">Ako to cele funguje?</h1>
+    <h1 class="heading">Ako to celé funguje?</h1>
     <p class="description">
       Aby sme sa vyhli určitým nepríjemnostiam, máme celkový výrobný proces
       rozdelený do niekoľkých bodov, spolu s otvorenou komunikáciou s Vami.

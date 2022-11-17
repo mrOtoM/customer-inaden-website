@@ -3,7 +3,7 @@
     <router-link to="/"
       ><img src="@/assets/img/inadenLOGO.png" alt=""
     /></router-link>
-    <div id="menu" class="fas fa-bars"></div>
+    <div id="menu-btn" class="fas fa-bars"></div>
     <div class="navbar">
       <nav>
         <ul>
@@ -28,22 +28,20 @@
   </header>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style>
 header {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 7rem;
   padding: 1.5rem 9%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  background-color: white;
 }
 
 header img {
@@ -55,7 +53,7 @@ header img:hover {
   opacity: 0.8;
 }
 
-#menu {
+#menu-btn {
   font-size: 3rem;
   color: #666;
   cursor: pointer;
@@ -88,5 +86,11 @@ header .navbar ul li a:hover,
 header .navbar ul li a:active,
 header .navbar ul li a.router-link-active {
   color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 </style>

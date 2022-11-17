@@ -90,6 +90,7 @@ export default {
   position: relative;
   min-height: 80%;
   overflow: hidden;
+  margin-top: 7rem;
 }
 
 .home .content {
