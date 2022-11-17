@@ -128,8 +128,12 @@ section {
     width: 100%;
     background: #fff;
     border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    /* clip-path: polygon(0 0, 100% 0, 100% 21%, 0 37%); */
   }
+  /* 
+  .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  } */
 
   header .navbar ul {
     flex-flow: column;

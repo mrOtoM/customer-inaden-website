@@ -16,7 +16,7 @@
           <p>Osloboditeľov 829</p>
           <p>Čachtice 916 21</p>
           <br />
-          <P>Mobil: 0917 755 031</P>
+          <p>Mobil: 0917 755 031</p>
           <p>Emial: inadenzamocnictvo@gmail.com</p>
         </div>
 
